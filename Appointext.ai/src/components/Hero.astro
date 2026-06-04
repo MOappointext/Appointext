@@ -1,0 +1,71 @@
+---
+import VideoGate from './VideoGate.astro';
+---
+
+<section class="bg-white dotted-bg pt-16 pb-12">
+  <div class="site-container">
+
+    <!-- Headline -->
+    <div class="text-center mb-10 max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-ink">
+        We Build You a <span class="hl-yellow">Custom AI</span> That Books Calls For You
+        <br />
+        <span class="text-blue">in 3 to 7 Days</span>
+      </h1>
+    </div>
+
+    <!-- Video Gate (form → video → Stripe CTA) -->
+    <VideoGate />
+
+    <!-- Subtext + secondary CTAs (always visible) -->
+    <div class="max-w-4xl mx-auto text-center mt-10 space-y-6">
+
+      <p class="text-lg md:text-xl leading-relaxed text-ink">
+        <span class="hl-yellow-full font-black text-base">$99 today</span>
+        {" "}covers your full custom build, your{" "}
+        <strong>first month free</strong>, and a{" "}
+        <strong>1:1 strategy call</strong>.
+        <br class="hidden md:block" />
+        After this batch closes, pricing returns to{" "}
+        <strong>$3,797</strong>.
+      </p>
+
+      <!-- Secondary CTA -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="#how-it-works"
+          data-testid="hero-cta-secondary"
+          class="inline-flex items-center justify-center gap-2 bg-yellow text-ink
+                 font-black text-lg px-10 py-4 rounded-full hover:bg-yellow-soft
+                 transition-colors w-full sm:w-auto"
+        >
+          See How It Works
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm font-bold text-ink pt-1">
+        <span class="flex items-center gap-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1849D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          No credit card to start
+        </span>
+        <span class="flex items-center gap-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6480" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Live in 3–7 days
+        </span>
+        <span class="flex items-center gap-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1849D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          First month free
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>

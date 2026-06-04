@@ -1,0 +1,91 @@
+---
+const stats = [
+  { value: "200+",  label: "Businesses Live" },
+  { value: "<60s",  label: "Avg. Response Time" },
+  { value: "90d",   label: "Auto Follow-Up" },
+  { value: "3-7d",  label: "Time to Launch" },
+];
+
+const testimonials = [
+  {
+    quote: "First week live — 3 booked calls from leads that had been sitting cold for months. I watched the AI book a $4k client at 11pm on a Sunday.",
+    name: "Jordan Beverly",
+    role: "Real Estate Advisor · Beverly and Co.",
+    tag: "+3 calls in week 1",
+    photo: "/photo-1500648767791-00dcc994a43e.jpg",
+  },
+  {
+    quote: "I tried 4 different 'AI tools' before this. They all sounded robotic. AppoinText sounds EXACTLY like me. My clients can't tell the difference.",
+    name: "Mariana Reyes",
+    role: "Business Coach · Six-Figure Studio",
+    tag: "Sounds 100% human",
+    photo: "/photo-1580489944761-15a19d654956.jpg",
+  },
+  {
+    quote: "I was losing about 40% of leads to slow response time. Now every lead gets replied to in under a minute, even when I'm on the school run.",
+    name: "Devon McCloud",
+    role: "Agency Owner · McCloud Media",
+    tag: "Recovered 40% of leads",
+    photo: "/photo-1535713875002-d1d0cf377fde.jpg",
+  },
+];
+---
+
+<section class="bg-white py-24" id="results">
+  <div class="site-container">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <span class="inline-flex items-center bg-blue text-white text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full mb-8">
+        Real Businesses &middot; Real Results
+      </span>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-ink">
+        They stopped chasing leads.<br />
+        <span class="hl-yellow-full">Started closing them.</span>
+      </h2>
+    </div>
+
+    <!-- Stats row -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
+      {stats.map((s) => (
+        <div class="flex flex-col items-center border-2 border-yellow rounded-2xl px-6 py-4">
+          <span class="text-2xl font-black text-ink leading-none">{s.value}</span>
+          <span class="text-xs font-black uppercase tracking-[0.12em] text-muted mt-1">{s.label}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- Testimonial cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {testimonials.map((t) => (
+        <div class="flex flex-col justify-between bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+          <div>
+            <div class="text-yellow text-5xl font-black leading-none mb-4" style="font-family:'JetBrains Mono',monospace;">&ldquo;&rdquo;</div>
+            <p class="text-ink text-base leading-relaxed mb-8" style="font-weight:400;">{t.quote}</p>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 mb-5">
+              <img src={t.photo} alt={t.name} class="w-10 h-10 rounded-full object-cover object-top shrink-0" />
+              <div>
+                <p class="text-ink font-bold text-sm">{t.name}</p>
+                <p class="text-muted text-xs" style="font-weight:400;">{t.role}</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1.5 border border-yellow text-ink text-xs font-bold px-4 py-1.5 rounded-full">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFD900" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              {t.tag}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="text-center text-muted text-xs mt-10 max-w-xl mx-auto" style="font-weight:400;">
+      TESTIMONIAL DISCLAIMER: All testimonials reflect individual experiences. Results are not typical and will vary based on your business, market, and effort.
+    </p>
+
+  </div>
+</section>
