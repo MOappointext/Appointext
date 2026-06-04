@@ -396,5 +396,3 @@ async function unlockVideo() {
 No other packages needed. Keep it lean.
 
 ---
-
-*AK Digital House — akdigitalhouse.com*
