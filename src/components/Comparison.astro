@@ -1,0 +1,108 @@
+---
+const cons = [
+  "Generic templates sent to everyone",
+  "Sounds robotic after 2 messages",
+  "Self-setup takes days of frustration",
+  "Same AI for every business",
+  "You're on your own after signup",
+  "2–4 hour response time",
+];
+
+const pros = [
+  "Custom-built around your business",
+  "Sounds exactly like you",
+  "Done for you — live in 3–7 days",
+  "Built from scratch per client",
+  "We handle everything start to finish",
+  "Under 60 seconds, 24/7",
+];
+---
+
+<section class="bg-white py-20" id="comparison">
+  <div class="site-container">
+
+    <!-- Header -->
+    <div class="text-center mb-14">
+      <span class="inline-flex items-center bg-blue text-white text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full mb-6">
+        The Difference
+      </span>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-ink">
+        It's not a tool you buy.<br />
+        <span class="hl-yellow-full">It's an AI we build for you.</span>
+      </h2>
+    </div>
+
+    <!-- Comparison columns -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+      <!-- Left: Other AI Tools -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8">
+        <!-- Header row -->
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center shrink-0">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.15em] text-muted">Other AI Tools</p>
+            <p class="text-red font-bold line-through text-base">Generic &amp; DIY</p>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 mb-6" />
+
+        <!-- Cons list -->
+        <ul class="space-y-4">
+          {cons.map((item) => (
+            <li class="flex items-center gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="3" stroke-linecap="round" class="shrink-0">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+              <span class="text-muted text-base line-through" style="font-weight:400;">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Right: AppoinText AI -->
+      <div class="relative bg-ink rounded-2xl p-8">
+        <!-- Top-right badge -->
+        <span class="absolute -top-3.5 right-6 inline-flex items-center gap-1.5 bg-yellow text-ink text-xs font-black uppercase tracking-[0.15em] px-4 py-1.5 rounded-full">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          AppoinText AI
+        </span>
+
+        <!-- Header row -->
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-8 h-8 rounded-full bg-yellow flex items-center justify-center shrink-0">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs font-black uppercase tracking-[0.15em] text-yellow">AppoinText AI</p>
+            <p class="text-white font-black text-base">Custom &amp; Done-for-You</p>
+          </div>
+        </div>
+
+        <hr class="border-white/20 mb-6" />
+
+        <!-- Pros list -->
+        <ul class="space-y-4">
+          {pros.map((item) => (
+            <li class="flex items-center gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD900" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="shrink-0">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span class="text-white text-base" style="font-weight:400;">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

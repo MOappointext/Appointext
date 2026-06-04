@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Terms of Service — AppoinText AI">
+  <Navbar showCta={false} />
+  <main class="bg-white py-20">
+    <div class="site-container max-w-3xl mx-auto">
+
+      <div class="mb-12">
+        <span class="inline-flex items-center bg-yellow text-ink text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full mb-6">Legal</span>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight text-ink mb-4">Terms of Service</h1>
+        <p class="text-muted text-sm" style="font-weight:400;">Last updated: June 2026</p>
+      </div>
+
+      <div class="prose prose-neutral max-w-none space-y-10 text-base text-ink" style="font-weight:400; line-height:1.8;">
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">1. Agreement to Terms</h2>
+          <p class="text-muted">By accessing or purchasing from AppoinText AI ("we", "us", "our"), you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use our services. These terms apply to all visitors, customers, and users of our platform.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">2. Services Provided</h2>
+          <p class="text-muted">AppoinText AI provides custom AI-powered lead engagement and appointment-setting systems built for individual businesses. Our service includes a strategy call, a done-for-you AI build, calendar and CRM integration, conversation training, and one month of hosting and maintenance. Services are described in full at the time of purchase.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">3. Payment & Refund Policy</h2>
+          <p class="text-muted">All payments are processed securely through Stripe. The $99 onboarding fee is collected at checkout and applied toward your full AI build. If at any point during the initial strategy call you determine this service is not the right fit, we will issue a full refund of your $99 immediately — no forms, no waiting, no questions asked. Refund requests made after the strategy call are evaluated on a case-by-case basis.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">4. Ongoing Subscription</h2>
+          <p class="text-muted">Your first month of service is included in your $99 onboarding fee. After the first month, continued access to hosting, maintenance, monitoring, and optimization is available on a flat monthly retainer. Pricing for the retainer will be communicated during the strategy call. You may cancel at any time with 30 days written notice.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">5. Intellectual Property</h2>
+          <p class="text-muted">All conversation flows, AI logic, and systems we build are licensed to you for use in your business. AppoinText AI retains the right to use anonymised performance data and aggregate results for internal improvement. You may not resell or redistribute AI systems built by AppoinText AI without written permission.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">6. Client Responsibilities</h2>
+          <p class="text-muted">You agree to provide accurate business information during the onboarding and strategy call process. You are responsible for ensuring that any leads entering your AI system have consented to receive automated text messages in accordance with applicable laws (including TCPA in the US). AppoinText AI is not responsible for compliance failures arising from incorrect or incomplete information provided by you.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">7. Limitation of Liability</h2>
+          <p class="text-muted">AppoinText AI shall not be liable for any indirect, incidental, special, or consequential damages arising from use of our services. Our total liability to you for any claims arising under these terms shall not exceed the amount paid by you in the 90 days prior to the claim.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">8. Earnings Disclaimer</h2>
+          <p class="text-muted">Any income or results mentioned on our website are illustrative examples only. Results vary based on industry, effort, lead quality, and market conditions. We make no guarantee that you will achieve the same results. Past performance of any client does not guarantee future results.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">9. Modifications to Terms</h2>
+          <p class="text-muted">We reserve the right to update these Terms of Service at any time. Continued use of our services after any changes constitutes acceptance of the updated terms. We will make reasonable efforts to notify active clients of material changes.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">10. Contact</h2>
+          <p class="text-muted">If you have any questions about these Terms of Service, please contact us at <a href="mailto:hello@appointext.ai" class="text-blue hover:underline">hello@appointext.ai</a>.</p>
+        </section>
+
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-gray-100">
+        <a href="/" class="inline-flex items-center gap-2 text-blue font-semibold text-sm hover:underline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back to home
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

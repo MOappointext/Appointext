@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Privacy Policy — AppoinText AI">
+  <Navbar showCta={false} />
+  <main class="bg-white py-20">
+    <div class="site-container max-w-3xl mx-auto">
+
+      <div class="mb-12">
+        <span class="inline-flex items-center bg-yellow text-ink text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full mb-6">Legal</span>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight text-ink mb-4">Privacy Policy</h1>
+        <p class="text-muted text-sm" style="font-weight:400;">Last updated: June 2026</p>
+      </div>
+
+      <div class="prose prose-neutral max-w-none space-y-10 text-base text-ink" style="font-weight:400; line-height:1.8;">
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">1. Who We Are</h2>
+          <p class="text-muted">AppoinText AI ("we", "us", "our") provides custom AI appointment-setting systems for businesses. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website or purchase our services.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">2. Information We Collect</h2>
+          <p class="text-muted">We collect information you provide directly to us, including:</p>
+          <ul class="list-disc pl-6 mt-3 space-y-2 text-muted">
+            <li>Name, email address, and phone number when you fill out our lead form</li>
+            <li>Business name and details shared during the strategy call</li>
+            <li>Payment information (processed and stored securely by Stripe — we do not store card details)</li>
+            <li>Communication records including emails and call notes</li>
+          </ul>
+          <p class="text-muted mt-3">We may also collect usage data automatically, including IP address, browser type, pages visited, and time on site via standard analytics tools.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">3. How We Use Your Information</h2>
+          <p class="text-muted">We use the information we collect to:</p>
+          <ul class="list-disc pl-6 mt-3 space-y-2 text-muted">
+            <li>Deliver and improve the services you purchased</li>
+            <li>Schedule and conduct your strategy call</li>
+            <li>Send service-related communications (onboarding, updates, invoices)</li>
+            <li>Follow up with you if you submitted a lead form but did not complete a purchase</li>
+            <li>Comply with legal obligations</li>
+          </ul>
+          <p class="text-muted mt-3">We do not sell or rent your personal information to third parties.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">4. SMS & Text Message Communications</h2>
+          <p class="text-muted">By submitting your phone number on our website, you consent to receive automated text messages from AppoinText AI related to your enquiry or purchase. Message frequency varies. Standard message and data rates may apply. Reply STOP at any time to opt out. Reply HELP for assistance. We comply with all applicable messaging regulations including TCPA.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">5. Third-Party Services</h2>
+          <p class="text-muted">We use trusted third-party services to operate our business, including:</p>
+          <ul class="list-disc pl-6 mt-3 space-y-2 text-muted">
+            <li><strong>Stripe</strong> — secure payment processing</li>
+            <li><strong>GoHighLevel</strong> — CRM and lead management</li>
+            <li><strong>Cloudflare</strong> — website hosting and performance</li>
+            <li><strong>Calendly / booking tools</strong> — strategy call scheduling</li>
+          </ul>
+          <p class="text-muted mt-3">Each of these services has their own privacy policy governing how they handle data shared with them.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">6. Cookies</h2>
+          <p class="text-muted">Our website uses cookies to improve your browsing experience and analyse site traffic. You can control cookie settings through your browser. Disabling cookies may affect some functionality of the site.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">7. Data Retention</h2>
+          <p class="text-muted">We retain your personal information for as long as necessary to deliver our services and comply with legal obligations. If you request deletion of your data, we will action this within 30 days, except where retention is required by law.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">8. Your Rights</h2>
+          <p class="text-muted">Depending on your location, you may have the right to access, correct, or delete your personal data. To make a request, contact us at <a href="mailto:hello@appointext.ai" class="text-blue hover:underline">hello@appointext.ai</a>. We will respond within 30 days.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">9. Security</h2>
+          <p class="text-muted">We take reasonable technical and organisational measures to protect your personal information against unauthorised access, loss, or disclosure. However, no method of transmission over the internet is 100% secure.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">10. Changes to This Policy</h2>
+          <p class="text-muted">We may update this Privacy Policy from time to time. We will post the updated version on this page with a revised date. Continued use of our services after changes are posted constitutes acceptance of the updated policy.</p>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-black text-ink mb-3">11. Contact Us</h2>
+          <p class="text-muted">For any privacy-related questions or requests, contact us at <a href="mailto:hello@appointext.ai" class="text-blue hover:underline">hello@appointext.ai</a>.</p>
+        </section>
+
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-gray-100">
+        <a href="/" class="inline-flex items-center gap-2 text-blue font-semibold text-sm hover:underline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back to home
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

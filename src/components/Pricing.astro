@@ -1,0 +1,116 @@
+---
+const items = [
+  { title: "Full custom AI setter built for your business", sub: "Normally $2,500 - $3,500" },
+  { title: "First month completely free",                   sub: "Normally $297 - $497" },
+  { title: "Strategy call to map out your entire setup",    sub: "Value: $500" },
+  { title: "Live in 3 to 7 days",                          sub: "No 6-week onboarding" },
+  { title: "Done-for-you — you don't touch a thing",       sub: "Zero tech skills required" },
+  { title: "Custom follow-up sequence (90 days)",           sub: "Nurtures every cold lead" },
+  { title: "Calendar + CRM integration",                    sub: "Books directly into your system" },
+  { title: "Conversation training on your offers",          sub: "Sounds exactly like you" },
+];
+---
+
+<section class="bg-ink dotted-bg-dark py-24" id="pricing">
+  <div class="site-container">
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start max-w-5xl mx-auto">
+
+      <!-- Left: Checklist -->
+      <div class="lg:col-span-3">
+
+        <!-- Badge -->
+        <span class="inline-flex items-center gap-2 bg-yellow text-ink text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full mb-8">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          Everything Included for $99
+        </span>
+
+        <!-- Headline -->
+        <h2 class="text-5xl md:text-6xl font-black tracking-tight leading-none text-white mb-8">
+          <span class="line-through text-white/30 text-4xl block mb-1">$3,797</span>
+          of value.
+          <span class="hl-yellow-full inline-block mt-1">$99 today.</span>
+        </h2>
+
+        <!-- Checklist -->
+        <ul class="space-y-3">
+          {items.map((item) => (
+            <li class="flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl px-5 py-4 hover:border-yellow/30 transition-colors">
+              <div class="w-6 h-6 rounded-full bg-yellow flex items-center justify-center shrink-0 mt-0.5">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-base">{item.title}</p>
+                <p class="text-white/40 text-sm mt-0.5" style="font-family:'JetBrains Mono',monospace;">{item.sub}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Right: Price card -->
+      <div class="lg:col-span-2 relative lg:sticky lg:top-24 self-start">
+
+        <!-- Urgency badge -->
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+          <span class="inline-flex items-center gap-1.5 bg-red text-white text-xs font-black uppercase tracking-[0.15em] px-5 py-2 rounded-full shadow-lg whitespace-nowrap">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            Only 10 Spots
+          </span>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 pt-10 shadow-2xl">
+
+          <!-- Total value -->
+          <div class="text-center mb-6 pb-6 border-b border-gray-100">
+            <p class="text-xs font-black uppercase tracking-[0.15em] text-muted mb-2">Total Value</p>
+            <p class="text-2xl font-black text-muted line-through">Up to $3,797</p>
+          </div>
+
+          <!-- Price -->
+          <div class="text-center mb-6">
+            <p class="text-xs font-black uppercase tracking-[0.15em] text-blue mb-2">Your Investment Today</p>
+            <div class="text-8xl font-black text-ink leading-none">$99</div>
+            <p class="text-muted text-sm mt-3" style="font-weight:400;">One-time. Goes toward your full build.</p>
+          </div>
+
+          <!-- CTA -->
+          <a href="https://buy.stripe.com/8x2bIUgauclZglv5Uv7bW08"
+             class="flex items-center justify-center gap-2 w-full bg-blue text-white font-black text-lg py-4 rounded-full hover:bg-blue-hover transition-colors animate-pulse-soft mb-6">
+            Claim My $99 Spot &nbsp;→
+          </a>
+
+          <!-- Trust list -->
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-muted" style="font-weight:400;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1849D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Secure checkout
+            </li>
+            <li class="flex items-center gap-2 text-sm text-muted" style="font-weight:400;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1849D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Money back guarantee
+            </li>
+            <li class="flex items-center gap-2 text-sm text-muted" style="font-weight:400;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1849D6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              No hidden fees
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
