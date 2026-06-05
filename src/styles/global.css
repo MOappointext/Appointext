@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "@fontsource/urbanist/400.css";
+@import "@fontsource/urbanist/700.css";
+@import "@fontsource/urbanist/900.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
 
 @theme {
   --color-yellow:      #FFD900;

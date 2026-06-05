@@ -62,7 +62,7 @@ const faqs = [
               <polyline points="6 9 12 15 18 9"/>
             </svg>
           </button>
-          <div class="faq-body overflow-hidden" style={i === 0 ? "" : "display:none;"}>
+          <div class="faq-body overflow-hidden transition-[max-height] duration-300 ease-in-out" style={i === 0 ? "max-height:500px;" : "max-height:0;"}>
             <p class="text-muted text-sm leading-relaxed px-6 pb-6" style="font-weight:400;">{item.a}</p>
           </div>
         </div>
@@ -83,15 +83,15 @@ const faqs = [
       // Close all
       document.querySelectorAll('.faq-item').forEach((el) => {
         el.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
-        el.querySelector('.faq-body').style.display = 'none';
-        el.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        (el.querySelector('.faq-body') as HTMLElement).style.maxHeight = '0';
+        (el.querySelector('.faq-icon') as HTMLElement).style.transform = 'rotate(0deg)';
       });
 
       // Open clicked if it was closed
       if (!isOpen) {
         btn.setAttribute('aria-expanded', 'true');
-        body.style.display = 'block';
-        icon.style.transform = 'rotate(180deg)';
+        (body as HTMLElement).style.maxHeight = '500px';
+        (icon as HTMLElement).style.transform = 'rotate(180deg)';
       }
     });
   });
